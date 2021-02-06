@@ -1,0 +1,143 @@
+:root{
+    --background: rgb(53, 53, 53);
+    --outline: rgb(231, 233, 223);
+    --textbright: rgb(225, 0, 255);
+    --selectionbg: rgb(140, 0, 255);
+    --glowcolor: rgb(0, 238, 255);
+}
+
+::selection{
+    background-color: var(--selectionbg);
+    color: var(--outline);
+}
+
+body{
+    background: var(--background);
+    color: var(--outline);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    color: var(--textbright);
+    text-align: center;
+    padding: 1rem;
+}
+
+header p{
+    margin:1rem 10% 1rem 10%;
+    color: var(--outline);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.linear-gradient-background {
+    background-image: linear-gradient(
+      rgba(232, 102, 236, 0.3) 0%,
+      rgba(232, 102, 236, 0.6) 100%
+    );
+  }
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+.column {
+    display: flex;
+    flex-direction: column
+}
+.card-column{
+    width: 33%;
+    padding: 1rem;
+    
+}
+
+.card{
+    border: 1px dotted var(--outline);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.code-card{
+    padding: 1rem;
+}
+
+.card-header{
+    width: 95%;
+    padding: 0 1rem 0 1rem;
+    font-size: x-large;
+    background: var(--background);
+    border: 1px solid var(--outline);
+    color: var(--textbright);
+    border-radius: 5px;
+    position: relative;
+    top: -25px;
+    left: 2.5%;
+    z-index: 1;
+}
+
+.card-body{
+   color: var(--textbright);
+   padding-bottom: 1rem; 
+   
+}
+
+.code-card pre{
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.code-block{
+    flex: 2;
+    padding: 0 0 0 2.9rem;
+    line-height: 1.2rem;
+    /* min-height: 68%; */
+    border-radius: 15px;
+    background: url(../images/image.png);
+}
+
+.code-card:hover .card-header, .code-card:hover{
+    box-shadow: 0 0 10px var(--glowcolor);
+    transition: 1s;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.fa-heart{
+    color: red;
+}
+
+@media screen and (max-width: 992px) {
+    .card-column{
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-column{
+        width:100%;
+    }
+}
