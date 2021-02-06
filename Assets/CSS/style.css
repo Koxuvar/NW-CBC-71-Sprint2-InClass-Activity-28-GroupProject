@@ -17,6 +17,10 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 
+h1{
+    font-size: 4rem;
+}
+
 header{
     color: var(--textbright);
     text-align: center;
@@ -59,7 +63,6 @@ main{
 .card-column{
     width: 33%;
     padding: 1rem;
-    
 }
 
 .card{
@@ -91,7 +94,6 @@ main{
 .card-body{
    color: var(--textbright);
    padding-bottom: 1rem; 
-   
 }
 
 .code-card pre{
@@ -115,16 +117,11 @@ main{
     transition: 1s;
 }
 
-h1{
-    font-size: 4rem;
-}
-
 footer{
     width: 100%;
     text-align: center;
     padding: 2rem;
 }
-
 
 .fa-heart{
     color: red;
